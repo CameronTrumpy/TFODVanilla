@@ -25,27 +25,22 @@ As of writing, this [GPU support](https://www.tensorflow.org/install/gpu) articl
 
 Optional repo directory setup
 <pre>
-
 cd ~
 mkdir GITRepos
 cd GITRepos
-
 </pre>
+
 Clone Repo
 <pre>
-
 git clone https://github.com/CameronTrumpy/TFODVanilla
 cd  TFODVanilla
-
 </pre>
 <br/><br/>
 
 **Step 2.** Create a new virtual environment
 
 <pre>
-
 python3 -m venv tfod
-
 </pre>
 
 <br/>
@@ -53,9 +48,7 @@ python3 -m venv tfod
 **Step 3.** Activate your virtual environment. Anytime you are working with this project your environment should be activated
 
 <pre>
-
 source tfod/bin/activate
-
 </pre>
 
 <br/>
@@ -63,7 +56,6 @@ source tfod/bin/activate
 **Step 4.** Install dependencies and add virtual environment to the Python Kernel, along with jupyter for jupyter notebooks
 
 <pre>
-
 python -m pip install --upgrade pip
 
 pip install ipykernel
@@ -71,7 +63,6 @@ pip install ipykernel
 pip install jupyter
 
 python -m ipykernel install --user --name=tfod
-
 </pre>
 
 <br/>
@@ -79,9 +70,7 @@ python -m ipykernel install --user --name=tfod
 **Step 5.0.** Open The first notebook. [1. Image Collection.ipynb](https://github.com/CameronTrumpy/TFODVanilla/blob/master/1.%20Image%20Collection.ipynb)- ensure you start jupyter, and change the kernel to the virtual environment as shown below.
 
 <pre>
-
 jupyter notebook
-
 </pre>
 
 <img  src="https://i.imgur.com/8yac6Xl.png">
