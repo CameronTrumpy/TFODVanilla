@@ -1,0 +1,26 @@
+<annotation>
+	<folder>thankyou</folder>
+	<filename>2021-05-31-150826.jpg</filename>
+	<path>/home/ffubuntu/Desktop/TFODCourse/Tensorflow/workspace/images/collectedimages/thankyou/2021-05-31-150826.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>thankyou</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>608</xmin>
+			<ymin>231</ymin>
+			<xmax>946</xmax>
+			<ymax>421</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>livelong</folder>
+	<filename>2021-05-31-150916_5.jpg</filename>
+	<path>/home/ffubuntu/Desktop/TFODCourse/Tensorflow/workspace/images/collectedimages/livelong/2021-05-31-150916_5.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>livelong</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>422</xmin>
+			<ymin>307</ymin>
+			<xmax>627</xmax>
+			<ymax>541</ymax>
+		</bndbox>
+	</object>
+</annotation>
