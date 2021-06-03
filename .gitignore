@@ -1,2 +1,6 @@
 ## Ignored files and directories
-./tfod
+/tfod
+/Tensorflow
+/.ipynb_checkpoints
+/ipynb_checkpoints
+.ipynb_checkpoints
