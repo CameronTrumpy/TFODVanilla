@@ -79,19 +79,13 @@ jupyter notebook
 
 **Step 5.1** Refer to the instructions file for how to successfully complete the first notebook. [Notebook Guide](https://github.com/CameronTrumpy/TFODVanilla/blob/master/NotebookGuide.md) 
 
-**Step 6.** Manually divide collected images into two folders train and test. So now all folders and annotations should be split between the following two folders. <br/>
-
-\TFODCourse\Tensorflow\workspace\images\train<br  />
-
-\TFODCourse\Tensorflow\workspace\images\test
-
 <br/><br/>
 
-**Step 7.** Begin training process by opening  [2. Training and Detection.ipynb](https://github.com/CameronTrumpy/TFODVanilla/blob/master/2.%20Training%20and%20Detection.ipynb), this notebook will walk you through installing Tensorflow Object Detection, making detections, saving and exporting your model. Refer to the  [Notebook Guide](https://github.com/CameronTrumpy/TFODVanilla/blob/master/NotebookGuide.md) to successfully complete the notebook if issues arise.
+**Step 6.** Begin training process by opening  [2. Training and Detection.ipynb](https://github.com/CameronTrumpy/TFODVanilla/blob/master/2.%20Training%20and%20Detection.ipynb), this notebook will walk you through installing Tensorflow Object Detection, making detections, saving and exporting your model. Refer to the  [Notebook Guide](https://github.com/CameronTrumpy/TFODVanilla/blob/master/NotebookGuide.md) to successfully complete the notebook if issues arise.
 
 <br  /><br/>
 
-**Step 8.** During this process the Notebook will install Tensorflow Object Detection. You should ideally receive a notification indicating that the API has installed successfully at Step 8 with the last line stating OK.
+**Step 7.** During this process the Notebook will install Tensorflow Object Detection. You should ideally receive a notification indicating that the API has installed successfully at Step 8 with the last line stating OK.
 
 <img  src="https://i.imgur.com/FSQFo16.png">
 
@@ -99,13 +93,13 @@ If not, resolve installation errors by referring to the <a  href="https://github
 
 <br  />  <br/>
 
-**Step 9.** Once you get to step 6. Train the model, inside of the notebook, you may choose to train the model from within the notebook. I have noticed however that training inside of a separate terminal on a Windows machine you're able to display live loss metrics.
+**Step 8.** Once you get to step 6. Train the model, inside of the notebook, you may choose to train the model from within the notebook. I have noticed however that training inside of a separate terminal on a Windows machine you're able to display live loss metrics.
 
 <img  src="https://i.imgur.com/K0wLO57.png">
 
 <br  />
 
-**Step 10.** You can optionally evaluate your model inside of Tensorboard. Once the model has been trained and you have run the evaluation command under Step 7. Navigate to the evaluation folder for your trained model e.g.
+**Step 9.** You can optionally evaluate your model inside of Tensorboard. Once the model has been trained and you have run the evaluation command under Step 7. Navigate to the evaluation folder for your trained model e.g.
 
 <pre> cd Tensorlfow/workspace/models/my_ssd_mobnet/eval</pre>
 
