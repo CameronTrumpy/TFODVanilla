@@ -18,18 +18,19 @@ This step creates your training and test image directories if they do not alread
 **Step 4.**
 
 This step handles your image capture. It didn't work well for me, so I just captured my images outside of the notebook and copied them in to the correct directories. If you want to do it that way, this is how I went about it.
-<pre>
-sudo apt-get install cheese
-cheese
-</pre>
+
+        sudo apt-get install cheese
+        cheese
+
+    
 Cheese is a image capture tool for linux. In cheese, take whatever pictures you want for training. Once you're done, copy those images into the collectedimages directory created in the last step. Create a directory for each set of labeled images. For example, save all your thumbsup images in /collectedimages/thumbsup
 
 **Step 5.**
 
 This step installs labelImg into the directory Tensorflow/labelimg. LabelImg is used for placing labels on specific sections of your image. For me, it didn't properly run in the jupyter notebook, so I had to open it from a terminal window. You should open your terminal inside the repo directory, activate your virtual environment, and then run
-<pre>
-python labelImg.py
-</pre>
+
+        python labelImg.py
+
 Label your images. Be careful to draw your bounding boxes as tight to the object as possible. The more space included that isn't your object, the more chances there are for your model to become less precise.
 
 **Step 6.**
@@ -64,7 +65,7 @@ This step creates your label map for your model. The labels should exactly match
 
 **Step 3.**
 
-Create your TF records. These will be used later in the project for training your model. 
+Create your TF records. These will be used later in the project for training your model.
 
 **Step 4.**
 
@@ -72,19 +73,42 @@ This step copies the model into your training directory.
 
 **Step 5.**
 
-This updates your config files based on what you had updated earlier.
+This updates your config files based on what you had updated earlier. This is necesssary for you to execute transfer learning and apply your data to the pretrained model.
 
 **Step 6.**
 
-TRAIN YOUR MODEL!! 
+TRAIN YOUR MODEL!! Training may take a while depending on if you're training on CPU or GPU. I trained on a GTX 1060TI, with a per-step time of around .15s. This per-step time indicates the average step speed in a batch, out of the total epoch of 2000 steps. 
+
+Training on CPU is extremely slow compared to training on GPU, so even if you don't have a high powered GPU, it is still highly reccomended to train on one.
 
 **Step 7.**
 
-Evaluate your model. It should at the end return results on your test data if correct.
+Evaluate your model. If your training correctly executed,the evaluation should return a results table on how your model performed with the test data.
 
 **Step 8.**
+
+Loading your model from a checkpoint should work fine if your previous two steps worked.
+
 **Step 9.**
+
+To detect from an image, make sure to update the image path to match a file you have taken.
+
 **Step 10.**
+
+I had issues with live detection, as openCV was having trouble displaying a GUI for live detection.
+
 **Step 11.**
+
+Freezing the graph allows to export your project to TFJS or TFLite for use on mobile devices.
+
 **Step 12.**
+
+Convert to TFJS for web application
+
 **Step 13.**
+
+Convert to TFLite to run on a device like a Raspberry Pi
+
+**Step 14.**
+
+Exporting models
