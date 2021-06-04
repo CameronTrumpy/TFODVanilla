@@ -59,11 +59,29 @@ Once installed, running the verification script should return an OK message. If 
 If you get the message, no module named 'object_detection', you may need to restart your kernel. you'll have to rerun the path setup cells, and your wget import. Then return to the import object_detection cell, and rerun.
 
 **Step 2.**
+
+This step creates your label map for your model. The labels should exactly match the labels that you previously assigned to your images in the first notebook, otherwise they will not work. Add as many labels as you need.
+
 **Step 3.**
+
+Create your TF records. These will be used later in the project for training your model. 
+
 **Step 4.**
+
+This step copies the model into your training directory.
+
 **Step 5.**
+
+This updates your config files based on what you had updated earlier.
+
 **Step 6.**
+
+TRAIN YOUR MODEL!! 
+
 **Step 7.**
+
+Evaluate your model. It should at the end return results on your test data if correct.
+
 **Step 8.**
 **Step 9.**
 **Step 10.**
