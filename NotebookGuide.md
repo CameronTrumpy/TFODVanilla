@@ -17,7 +17,7 @@ This step creates your training and test image directories if they do not alread
 
 **Step 4.**
 
-This step handles your image capture. It didn't work well for me, so I just captured my images outside of the notebook and copied them in to the correct directories. If you want to do it that way, this is how I went about it.
+This step handles your image capture. This step will fail if you do not have a webcam on your device. if you want more control, you can capture your images outside of the notebook and copied them in to the correct directories. If you want to do it that way, this is how I went about it.
 
         sudo apt-get install cheese
         cheese
@@ -29,6 +29,7 @@ Cheese is a image capture tool for linux. In cheese, take whatever pictures you 
 
 This step installs labelImg into the directory Tensorflow/labelimg. LabelImg is used for placing labels on specific sections of your image. For me, it didn't properly run in the jupyter notebook, so I had to open it from a terminal window. You should open your terminal inside the repo directory, activate your virtual environment, and then run
 
+        cd Tensorflow/labelimg
         python labelImg.py
 
 Label your images. Be careful to draw your bounding boxes as tight to the object as possible. The more space included that isn't your object, the more chances there are for your model to become less precise.

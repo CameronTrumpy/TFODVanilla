@@ -1,9 +1,7 @@
 
 # Tensorflow Object Detection Walkthrough
 
-This Repository includes files from a [course](https://github.com/nicknochnack/TFODCourse) by Nicholas Renotte, plus my additional instructions and tips on how to set up a good work environment for TF. It also includes custom scripts and instructions that were not included in course material.
-
-This set of Notebooks provides a complete set of code to be able to train and leverage your own custom object detection model using the Tensorflow Object Detection API. This accompanies the Tensorflow Object Detection course on my [YouTube channel](https://www.youtube.com/c/nicholasrenotte).
+This set of Notebooks contains code to train and use your own custom object detection model using the Tensorflow Object Detection API. It includes modified files from a [course](https://github.com/nicknochnack/TFODCourse) by Nicholas Renotte, plus my additional instructions and tips on how to set up a good work environment for TF. It also includes custom scripts and instructions that were not included in course material.
 
 ## Setup
 
