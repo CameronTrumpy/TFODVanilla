@@ -51,7 +51,7 @@ This step is just compressing your images into a tar.gz format. This isn't neces
 
 **Step 0.**
 
-This step configures your paths for training your model. If you want to change which pretrained model you train with, you can change the PRETRAINED_MODEL_URL && NAME to match. Alternate models can be found at [TF2 Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md).
+This step configures your paths for training your model. If you want to change which pre-trained model you train with, you can change the PRETRAINED_MODEL_URL && NAME to match. Alternate models can be found at [TF2 Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md).
 
 **Step 1.**
 
@@ -74,13 +74,13 @@ This step copies the model into your training directory.
 
 **Step 5.**
 
-This updates your config files based on what you had updated earlier. This is necesssary for you to execute transfer learning and apply your data to the pretrained model.
+This updates your config files based on what you had updated earlier. This is necessary for you to execute transfer learning and apply your data to the pre-trained model.
 
 **Step 6.**
 
-TRAIN YOUR MODEL!! Training may take a while depending on if you're training on CPU or GPU. I trained on a GTX 1060TI, with a per-step time of around .15s. This per-step time indicates the average step speed in a batch, out of the total epoch of 2000 steps. 
+TRAIN YOUR MODEL!! Training may take a while depending on if you're training on CPU or GPU. I trained on a GTX 1060TI, with a per-step time of around .15s. This per-step time indicates the average step speed in a batch, out of the total epoch of 2000 steps.
 
-Training on CPU is extremely slow compared to training on GPU, so even if you don't have a high powered GPU, it is still highly reccomended to train on one.
+Training on CPU is extremely slow compared to training on GPU, so even if you don't have a high powered GPU, it is still highly recommended to train on one.
 
 **Step 7.**
 
@@ -100,16 +100,16 @@ I had issues with live detection, as openCV was having trouble displaying a GUI 
 
 **Step 11.**
 
-Freezing the graph allows to export your project to TFJS or TFLite for use on mobile devices.
+Freezing the graph allows to export your project to TF.JS or TFLite for use on mobile devices.
 
 **Step 12.**
 
-Convert to TFJS for web application
+Convert to TF.JS for web application
 
 **Step 13.**
 
-Convert to TFLite to run on a device like a Raspberry Pi
+Convert to TFLite to run on a device like a Raspberry Pi.
 
 **Step 14.**
 
-Exporting models
+Exporting models.
